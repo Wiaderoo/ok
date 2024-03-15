@@ -34,7 +34,7 @@ a{
     overflow: hidden;
     background-position: center;
     background-size: cover;
-    background-image: url(graphics_etc/VinceCustoms_main_background.png);
+    background-image: url(VinceCustoms_main_background.png);
 }
 
 header{
