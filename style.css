@@ -195,11 +195,12 @@ header a{
 }
 
 #main_project_container{
-    height: 1200px;
+    height: auto;
     max-width: 100%;
     background-color: var(--second_color);
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
 }
 
 #main_project_titles{
@@ -219,18 +220,12 @@ header a{
     padding: 5px;
 }
 
-.left_main_photo{
+.main_photo{
     height: auto;
     width: 100%;
-    background-color: var(--main_color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 15px;
 }
 
-.right_main_photo{
+.inner_left_main_photo{
     height: auto;
     width: 100%;
     background-color: var(--main_color);
@@ -239,6 +234,19 @@ header a{
     justify-content: center;
     flex-direction: column;
     padding: 15px;
+    float: left;
+}
+
+.inner_right_main_photo{
+    height: auto;
+    width: 100%;
+    background-color: var(--main_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    float: right;
 }
 
 .photo_container{
@@ -258,11 +266,22 @@ header a{
     flex-direction: column;
 }
 
-.photo_description_heading{
+.inner_left_main_photo .photo_description_heading{
     height: auto;
     width: 80%;
     padding: 10px 10px 3px 10px;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: left;
+}
+
+.inner_right_main_photo .photo_description_heading{
+    height: auto;
+    width: 80%;
+    padding: 10px 10px 3px 10px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: right;
 }
 
 .photo_description hr{
@@ -273,7 +292,7 @@ header a{
 .photo_description_text{
     height: auto;
     width: 100%;
-    padding: 10px;
+    padding-top: 10px;
     font-size: 1.2rem;
     text-align: center;
 }
@@ -313,5 +332,27 @@ header a{
     #discover_projects_arrow{
         height: 13px;
         width: 13px;
+    }
+
+    .main_photo{
+        margin: 20px 0;
+    }
+
+    .inner_main_photo{
+        padding: 40px 0;
+        width: 60%;
+        box-shadow: 0px 6px 30px 2px #151515;
+    }
+
+    .photo_container img{
+        width: 65%;
+    }
+
+    .photo_description .photo_description_heading{
+        font-size: 1.8rem;
+    }
+
+    .photo_description_text{
+        font-size: 1.9rem;
     }
 }
